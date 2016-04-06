@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Scripts">
+    <File Path="Scripts\App.js" Url="Scripts/App.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\jquery-1.9.1.min.map" Url="Scripts/jquery-1.9.1.min.map" ReplaceContent="TRUE" />
+    <File Path="Scripts\jquery-1.9.1.min.js" Url="Scripts/jquery-1.9.1.min.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\jquery-1.9.1.js" Url="Scripts/jquery-1.9.1.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\jquery-1.9.1.intellisense.js" Url="Scripts/jquery-1.9.1.intellisense.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\app\resources\icons\css\font-awesome.min.css" Url="Scripts/app/resources/icons/css/font-awesome.min.css" ReplaceContent="TRUE" />
+    <File Path="Scripts\app\resources\icons\fonts\fontawesome-webfont.eot" Url="Scripts/app/resources/icons/fonts/fontawesome-webfont.eot" ReplaceContent="TRUE" />
+    <File Path="Scripts\app\resources\icons\fonts\fontawesome-webfont.svg" Url="Scripts/app/resources/icons/fonts/fontawesome-webfont.svg" ReplaceContent="TRUE" />
+    <File Path="Scripts\app\resources\icons\fonts\fontawesome-webfont.ttf" Url="Scripts/app/resources/icons/fonts/fontawesome-webfont.ttf" ReplaceContent="TRUE" />
+    <File Path="Scripts\app\resources\icons\fonts\fontawesome-webfont.woff" Url="Scripts/app/resources/icons/fonts/fontawesome-webfont.woff" ReplaceContent="TRUE" />
+    <File Path="Scripts\app\resources\icons\fonts\fontawesome-webfont.woff2" Url="Scripts/app/resources/icons/fonts/fontawesome-webfont.woff2" ReplaceContent="TRUE" />
+    <File Path="Scripts\app\resources\icons\fonts\FontAwesome.otf" Url="Scripts/app/resources/icons/fonts/FontAwesome.otf" ReplaceContent="TRUE" />
+    <File Path="Scripts\app\appComponent.js.map" Url="Scripts/app/appComponent.js.map" ReplaceContent="TRUE" />
+    <File Path="Scripts\app\appComponent.ts" Url="Scripts/app/appComponent.ts" ReplaceContent="TRUE" />
+    <File Path="Scripts\app\boot.js.map" Url="Scripts/app/boot.js.map" ReplaceContent="TRUE" />
+    <File Path="Scripts\app\boot.ts" Url="Scripts/app/boot.ts" ReplaceContent="TRUE" />
+    <File Path="Scripts\tsconfig.json" Url="Scripts/tsconfig.json" ReplaceContent="TRUE" />
+    <File Path="Scripts\app\mycomponent.ts" Url="Scripts/app/mycomponent.ts" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

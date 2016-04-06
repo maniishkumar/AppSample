@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="8a08bfc2-d224-4b4b-b7b9-5edb7045abdb" SharePointProductVersion="16.0">
+  <FeatureManifests>
+    <FeatureManifest Location="PrimeNGSample2_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

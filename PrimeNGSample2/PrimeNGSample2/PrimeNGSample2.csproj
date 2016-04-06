@@ -1,0 +1,437 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7C6C8A79-6655-4ECA-8780-85834F5EC03E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PrimeNGSample2</RootNamespace>
+    <AssemblyName>PrimeNGSample2</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>16.1</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <MinimumOfficeToolsVersion>12.2</MinimumOfficeToolsVersion>
+    <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
+    <ProjectMode>SharePointApp</ProjectMode>
+    <AppFeaturePartId>{d698caec-e207-49c0-8f31-3d93b7f1d704}</AppFeaturePartId>
+    <WspPartId>{950286c1-bce0-4061-b7af-29393c7ac066}</WspPartId>
+    <WorkflowPartId>{85d41729-fcf3-4a2b-bb80-5fc6dd422668}</WorkflowPartId>
+    <CspkgPartId>{8e7ddce8-67e8-4767-934b-4c09570a5b9e}</CspkgPartId>
+    <SqlPackagePartId>{591d8274-58e1-4914-bb1c-772841691413}</SqlPackagePartId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="node_modules\font-awesome\css\font-awesome.css.map" />
+    <None Include="node_modules\primeng\components\accordion\accordion.js.map" />
+    <None Include="node_modules\primeng\components\accordion\accordiontab.js.map" />
+    <None Include="node_modules\primeng\components\api\lazyload.js.map" />
+    <None Include="node_modules\primeng\components\api\message.js.map" />
+    <None Include="node_modules\primeng\components\api\selectitem.js.map" />
+    <None Include="node_modules\primeng\components\api\sortmeta.js.map" />
+    <None Include="node_modules\primeng\components\api\treenode.js.map" />
+    <None Include="node_modules\primeng\components\autocomplete\autocomplete.js.map" />
+    <None Include="node_modules\primeng\components\breadcrumb\breadcrumb.js.map" />
+    <None Include="node_modules\primeng\components\button\button.js.map" />
+    <None Include="node_modules\primeng\components\calendar\calendar.js.map" />
+    <None Include="node_modules\primeng\components\carousel\carousel.js.map" />
+    <None Include="node_modules\primeng\components\chart\barchart\barchart.js.map" />
+    <None Include="node_modules\primeng\components\chart\doughnutchart\doughnutchart.js.map" />
+    <None Include="node_modules\primeng\components\chart\linechart\linechart.js.map" />
+    <None Include="node_modules\primeng\components\chart\piechart\piechart.js.map" />
+    <None Include="node_modules\primeng\components\chart\polarareachart\polarareachart.js.map" />
+    <None Include="node_modules\primeng\components\chart\radarchart\radarchart.js.map" />
+    <None Include="node_modules\primeng\components\checkbox\checkbox.js.map" />
+    <None Include="node_modules\primeng\components\codehighlighter\codehighlighter.js.map" />
+    <None Include="node_modules\primeng\components\column\column.js.map" />
+    <None Include="node_modules\primeng\components\column\columntemplateloader.js.map" />
+    <None Include="node_modules\primeng\components\common\footer.js.map" />
+    <None Include="node_modules\primeng\components\common\header.js.map" />
+    <None Include="node_modules\primeng\components\datagrid\datagrid.js.map" />
+    <None Include="node_modules\primeng\components\datalist\datalist.js.map" />
+    <None Include="node_modules\primeng\components\datascroller\datascroller.js.map" />
+    <None Include="node_modules\primeng\components\datatable\datatable.js.map" />
+    <None Include="node_modules\primeng\components\dialog\dialog.js.map" />
+    <None Include="node_modules\primeng\components\dom\domhandler.js.map" />
+    <None Include="node_modules\primeng\components\dropdown\dropdown.js.map" />
+    <None Include="node_modules\primeng\components\editor\editor.js.map" />
+    <None Include="node_modules\primeng\components\fieldset\fieldset.js.map" />
+    <None Include="node_modules\primeng\components\galleria\galleria.js.map" />
+    <None Include="node_modules\primeng\components\growl\growl.js.map" />
+    <None Include="node_modules\primeng\components\inputswitch\inputswitch.js.map" />
+    <None Include="node_modules\primeng\components\inputtextarea\inputtextarea.js.map" />
+    <None Include="node_modules\primeng\components\inputtext\inputtext.js.map" />
+    <None Include="node_modules\primeng\components\lightbox\lightbox.js.map" />
+    <None Include="node_modules\primeng\components\listbox\listbox.js.map" />
+    <None Include="node_modules\primeng\components\megamenu\megamenu.js.map" />
+    <None Include="node_modules\primeng\components\menubar\menubar.js.map" />
+    <None Include="node_modules\primeng\components\menu\menu.js.map" />
+    <None Include="node_modules\primeng\components\messages\messages.js.map" />
+    <None Include="node_modules\primeng\components\orderlist\orderlist.js.map" />
+    <None Include="node_modules\primeng\components\overlaypanel\overlaypanel.js.map" />
+    <None Include="node_modules\primeng\components\paginator\paginator.js.map" />
+    <None Include="node_modules\primeng\components\panelmenu\panelmenu.js.map" />
+    <None Include="node_modules\primeng\components\panel\panel.js.map" />
+    <None Include="node_modules\primeng\components\password\password.js.map" />
+    <None Include="node_modules\primeng\components\picklist\picklist.js.map" />
+    <None Include="node_modules\primeng\components\progressbar\progressbar.js.map" />
+    <None Include="node_modules\primeng\components\radiobutton\radiobutton.js.map" />
+    <None Include="node_modules\primeng\components\rating\rating.js.map" />
+    <None Include="node_modules\primeng\components\schedule\schedule.js.map" />
+    <None Include="node_modules\primeng\components\selectbutton\selectbutton.js.map" />
+    <None Include="node_modules\primeng\components\slidemenu\slidemenu.js.map" />
+    <None Include="node_modules\primeng\components\slider\slider.js.map" />
+    <None Include="node_modules\primeng\components\spinner\spinner.js.map" />
+    <None Include="node_modules\primeng\components\splitbutton\splitbutton.js.map" />
+    <None Include="node_modules\primeng\components\splitbutton\splitbuttonitem.js.map" />
+    <None Include="node_modules\primeng\components\tabview\tabpanel.js.map" />
+    <None Include="node_modules\primeng\components\tabview\tabview.js.map" />
+    <None Include="node_modules\primeng\components\terminal\terminal.js.map" />
+    <None Include="node_modules\primeng\components\tieredmenu\tieredmenu.js.map" />
+    <None Include="node_modules\primeng\components\togglebutton\togglebutton.js.map" />
+    <None Include="node_modules\primeng\components\treetable\treetable.js.map" />
+    <None Include="node_modules\primeng\components\treetable\uitreerow.js.map" />
+    <None Include="node_modules\primeng\components\tree\tree.js.map" />
+    <None Include="node_modules\primeng\components\tree\treenode.js.map" />
+    <None Include="node_modules\primeng\components\tree\treenodetemplateloader.js.map" />
+    <None Include="node_modules\primeng\components\tree\uitreenode.js.map" />
+    <None Include="node_modules\primeng\primeng.js.map" />
+    <None Include="node_modules\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{833eba88-c658-429d-8649-bb3d4a85e501}</SharePointProjectItemId>
+    </None>
+    <None Include="node_modules\systemjs\dist\system-csp-production.js.map" />
+    <None Include="node_modules\systemjs\dist\system-polyfills.js.map" />
+    <None Include="node_modules\systemjs\dist\system-register-only.js.map" />
+    <None Include="node_modules\systemjs\dist\system.js.map" />
+    <None Include="package.json" />
+    <None Include="packages.config" />
+    <None Include="Pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5e9b8384-15fb-4a21-84b7-13a72f5e469d}</SharePointProjectItemId>
+    </None>
+    <Content Include="Elements.xml" />
+    <Content Include="node_modules\angular2\bundles\angular2-polyfills.js" />
+    <Content Include="node_modules\angular2\bundles\angular2-polyfills.min.js" />
+    <Content Include="node_modules\angular2\bundles\angular2.dev.js" />
+    <Content Include="node_modules\angular2\es6\dev\src\testing\shims_for_IE.js" />
+    <Content Include="node_modules\Elements.xml" />
+    <Content Include="node_modules\es6-shim\es6-shim.js" />
+    <Content Include="node_modules\es6-shim\es6-shim.min.js" />
+    <Content Include="node_modules\font-awesome\css\font-awesome.css" />
+    <Content Include="node_modules\font-awesome\css\font-awesome.min.css" />
+    <Content Include="node_modules\primeng\components\accordion\accordion.js" />
+    <Content Include="node_modules\primeng\components\accordion\accordiontab.js" />
+    <Content Include="node_modules\primeng\components\api\lazyload.js" />
+    <Content Include="node_modules\primeng\components\api\message.js" />
+    <Content Include="node_modules\primeng\components\api\selectitem.js" />
+    <Content Include="node_modules\primeng\components\api\sortmeta.js" />
+    <Content Include="node_modules\primeng\components\api\treenode.js" />
+    <Content Include="node_modules\primeng\components\autocomplete\autocomplete.js" />
+    <Content Include="node_modules\primeng\components\breadcrumb\breadcrumb.js" />
+    <Content Include="node_modules\primeng\components\button\button.js" />
+    <Content Include="node_modules\primeng\components\button\buttondemo.html" />
+    <Content Include="node_modules\primeng\components\calendar\calendar.js" />
+    <Content Include="node_modules\primeng\components\carousel\carousel.js" />
+    <Content Include="node_modules\primeng\components\chart\barchart\barchart.js" />
+    <Content Include="node_modules\primeng\components\chart\doughnutchart\doughnutchart.js" />
+    <Content Include="node_modules\primeng\components\chart\linechart\linechart.js" />
+    <Content Include="node_modules\primeng\components\chart\piechart\piechart.js" />
+    <Content Include="node_modules\primeng\components\chart\polarareachart\polarareachart.js" />
+    <Content Include="node_modules\primeng\components\chart\radarchart\radarchart.js" />
+    <Content Include="node_modules\primeng\components\checkbox\checkbox.js" />
+    <Content Include="node_modules\primeng\components\codehighlighter\codehighlighter.js" />
+    <Content Include="node_modules\primeng\components\column\column.js" />
+    <Content Include="node_modules\primeng\components\column\columntemplateloader.js" />
+    <Content Include="node_modules\primeng\components\common\footer.js" />
+    <Content Include="node_modules\primeng\components\common\header.js" />
+    <Content Include="node_modules\primeng\components\datagrid\datagrid.js" />
+    <Content Include="node_modules\primeng\components\datalist\datalist.js" />
+    <Content Include="node_modules\primeng\components\datascroller\datascroller.js" />
+    <Content Include="node_modules\primeng\components\datatable\datatable.js" />
+    <Content Include="node_modules\primeng\components\dialog\dialog.js" />
+    <Content Include="node_modules\primeng\components\dom\domhandler.js" />
+    <Content Include="node_modules\primeng\components\dropdown\dropdown.js" />
+    <Content Include="node_modules\primeng\components\editor\editor.js" />
+    <Content Include="node_modules\primeng\components\fieldset\fieldset.js" />
+    <Content Include="node_modules\primeng\components\galleria\galleria.js" />
+    <Content Include="node_modules\primeng\components\growl\growl.js" />
+    <Content Include="node_modules\primeng\components\inputswitch\inputswitch.js" />
+    <Content Include="node_modules\primeng\components\inputtextarea\inputtextarea.js" />
+    <Content Include="node_modules\primeng\components\inputtext\inputtext.js" />
+    <Content Include="node_modules\primeng\components\lightbox\lightbox.js" />
+    <Content Include="node_modules\primeng\components\listbox\listbox.js" />
+    <Content Include="node_modules\primeng\components\megamenu\megamenu.js" />
+    <Content Include="node_modules\primeng\components\menubar\menubar.js" />
+    <Content Include="node_modules\primeng\components\menu\menu.js" />
+    <Content Include="node_modules\primeng\components\messages\messages.js" />
+    <Content Include="node_modules\primeng\components\orderlist\orderlist.js" />
+    <Content Include="node_modules\primeng\components\overlaypanel\overlaypanel.js" />
+    <Content Include="node_modules\primeng\components\paginator\paginator.js" />
+    <Content Include="node_modules\primeng\components\panelmenu\panelmenu.js" />
+    <Content Include="node_modules\primeng\components\panel\panel.js" />
+    <Content Include="node_modules\primeng\components\password\password.js" />
+    <Content Include="node_modules\primeng\components\picklist\picklist.js" />
+    <Content Include="node_modules\primeng\components\progressbar\progressbar.js" />
+    <Content Include="node_modules\primeng\components\radiobutton\radiobutton.js" />
+    <Content Include="node_modules\primeng\components\rating\rating.js" />
+    <Content Include="node_modules\primeng\components\schedule\schedule.js" />
+    <Content Include="node_modules\primeng\components\selectbutton\selectbutton.js" />
+    <Content Include="node_modules\primeng\components\slidemenu\slidemenu.js" />
+    <Content Include="node_modules\primeng\components\slider\slider.js" />
+    <Content Include="node_modules\primeng\components\spinner\spinner.js" />
+    <Content Include="node_modules\primeng\components\splitbutton\splitbutton.js" />
+    <Content Include="node_modules\primeng\components\splitbutton\splitbuttonitem.js" />
+    <Content Include="node_modules\primeng\components\tabview\tabpanel.js" />
+    <Content Include="node_modules\primeng\components\tabview\tabview.js" />
+    <Content Include="node_modules\primeng\components\terminal\terminal.js" />
+    <Content Include="node_modules\primeng\components\tieredmenu\tieredmenu.js" />
+    <Content Include="node_modules\primeng\components\togglebutton\togglebutton.js" />
+    <Content Include="node_modules\primeng\components\treetable\treetable.js" />
+    <Content Include="node_modules\primeng\components\treetable\uitreerow.js" />
+    <Content Include="node_modules\primeng\components\tree\tree.js" />
+    <Content Include="node_modules\primeng\components\tree\treenode.js" />
+    <Content Include="node_modules\primeng\components\tree\treenodetemplateloader.js" />
+    <Content Include="node_modules\primeng\components\tree\uitreenode.js" />
+    <Content Include="node_modules\primeng\primeng.js" />
+    <Content Include="node_modules\primeui\primeui-all.min.css" />
+    <Content Include="node_modules\primeui\primeui-all.min.js" />
+    <Content Include="node_modules\primeui\primeui-ng-all.css" />
+    <Content Include="node_modules\primeui\primeui-ng-all.js" />
+    <Content Include="node_modules\primeui\primeui-ng-all.min.css" />
+    <Content Include="node_modules\primeui\primeui-ng-all.min.js" />
+    <Content Include="node_modules\primeui\primeui-ng.js" />
+    <Content Include="node_modules\primeui\primeui-ng.min.js" />
+    <Content Include="node_modules\primeui\themes\bootstrap\theme.css" />
+    <Content Include="node_modules\rxjs\bundles\Rx.js" />
+    <Content Include="node_modules\rxjs\bundles\Rx.min.js" />
+    <Content Include="node_modules\systemjs\dist\system-csp-production.js" />
+    <Content Include="node_modules\systemjs\dist\system-csp-production.src.js" />
+    <Content Include="node_modules\systemjs\dist\system-polyfills.js" />
+    <Content Include="node_modules\systemjs\dist\system-polyfills.src.js" />
+    <Content Include="node_modules\systemjs\dist\system-register-only.js" />
+    <Content Include="node_modules\systemjs\dist\system-register-only.src.js" />
+    <Content Include="node_modules\systemjs\dist\system.js" />
+    <Content Include="node_modules\systemjs\dist\system.src.js" />
+    <Content Include="node_modules\typescript\lib\typescript.js" />
+    <Content Include="Pages\Elements.xml" />
+    <Content Include="Pages\Default.aspx" />
+    <None Include="Scripts\app\appComponent.js.map" />
+    <None Include="Scripts\app\boot.js.map" />
+    <None Include="Scripts\app\resources\icons\fonts\fontawesome-webfont.eot" />
+    <None Include="Scripts\app\resources\icons\fonts\fontawesome-webfont.ttf" />
+    <None Include="Scripts\app\resources\icons\fonts\fontawesome-webfont.woff" />
+    <None Include="Scripts\app\resources\icons\fonts\fontawesome-webfont.woff2" />
+    <None Include="Scripts\app\resources\icons\fonts\FontAwesome.otf" />
+    <None Include="Scripts\tsconfig.json" />
+    <None Include="SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5b2d2ea0-67b9-4692-b3af-f3b62c2e0372}</SharePointProjectItemId>
+    </None>
+    <None Include="typings.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\jquery-1.9.1.min.map" />
+    <None Include="Scripts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{591d8274-58e1-4914-bb1c-772841691413}</SharePointProjectItemId>
+    </None>
+    <Content Include="Scripts\app\appComponent.js" />
+    <Content Include="Scripts\app\boot.js" />
+    <Content Include="Scripts\Elements.xml" />
+    <Content Include="Scripts\App.js" />
+    <Content Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\app\resources\icons\css\font-awesome.min.css" />
+    <Content Include="Scripts\app\resources\icons\fonts\fontawesome-webfont.svg" />
+    <Content Include="Scripts\_references.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{325c19e6-a036-41ff-8584-6bdf10fcd400}</SharePointProjectItemId>
+    </None>
+    <Content Include="Content\Elements.xml" />
+    <Content Include="Content\App.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\AppIcon.png">
+      <OpcRelationship>manifest-icon</OpcRelationship>
+    </Content>
+    <Content Include="Images\Elements.xml" />
+    <None Include="Images\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{28e76ffb-8bc2-410b-b66b-50afc0609bed}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Package\Package.package">
+      <PackageId>{8a08bfc2-d224-4b4b-b7b9-5edb7045abdb}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{d80f8566-ff8d-40b3-a882-f5cf7f82b73b}</FeatureId>
+    </None>
+    <None Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <AppManifestFile Include="AppManifest.xml">
+      <SubType>Designer</SubType>
+    </AppManifestFile>
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="node_modules\angular2\typings\browser.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\accordion\accordion.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\accordion\accordiontab.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\api\lazyload.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\api\message.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\api\selectitem.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\api\sortmeta.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\api\treenode.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\autocomplete\autocomplete.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\breadcrumb\breadcrumb.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\button\button.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\calendar\calendar.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\carousel\carousel.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\chart\barchart\barchart.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\chart\doughnutchart\doughnutchart.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\chart\linechart\linechart.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\chart\piechart\piechart.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\chart\polarareachart\polarareachart.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\chart\radarchart\radarchart.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\checkbox\checkbox.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\codehighlighter\codehighlighter.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\column\column.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\column\columntemplateloader.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\common\footer.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\common\header.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\datagrid\datagrid.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\datalist\datalist.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\datascroller\datascroller.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\datatable\datatable.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\dialog\dialog.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\dom\domhandler.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\dropdown\dropdown.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\editor\editor.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\fieldset\fieldset.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\galleria\galleria.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\growl\growl.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\inputswitch\inputswitch.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\inputtextarea\inputtextarea.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\inputtext\inputtext.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\lightbox\lightbox.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\listbox\listbox.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\megamenu\megamenu.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\menubar\menubar.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\menu\menu.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\messages\messages.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\orderlist\orderlist.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\overlaypanel\overlaypanel.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\paginator\paginator.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\panelmenu\panelmenu.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\panel\panel.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\password\password.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\picklist\picklist.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\progressbar\progressbar.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\radiobutton\radiobutton.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\rating\rating.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\schedule\schedule.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\selectbutton\selectbutton.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\slidemenu\slidemenu.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\slider\slider.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\spinner\spinner.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\splitbutton\splitbutton.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\splitbutton\splitbuttonitem.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\tabview\tabpanel.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\tabview\tabview.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\terminal\terminal.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\tieredmenu\tieredmenu.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\togglebutton\togglebutton.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\treetable\treetable.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\treetable\uitreerow.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\tree\tree.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\tree\treenode.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\tree\treenodetemplateloader.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\components\tree\uitreenode.d.ts" />
+    <TypeScriptCompile Include="node_modules\primeng\primeng.d.ts" />
+    <TypeScriptCompile Include="Scripts\app\appComponent.ts" />
+    <TypeScriptCompile Include="Scripts\app\boot.ts" />
+    <TypeScriptCompile Include="typings\browser.d.ts" />
+    <TypeScriptCompile Include="typings\browser\ambient\es6-shim\index.d.ts" />
+    <TypeScriptCompile Include="typings\browser\ambient\jasmine\index.d.ts" />
+    <TypeScriptCompile Include="typings\main.d.ts" />
+    <TypeScriptCompile Include="typings\main\ambient\es6-shim\index.d.ts" />
+    <TypeScriptCompile Include="typings\main\ambient\jasmine\index.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="node_modules\angular2\platform\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptJSXEmit>None</TypeScriptJSXEmit>
+    <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+    <TypeScriptModuleKind>System</TypeScriptModuleKind>
+    <TypeScriptRemoveComments>False</TypeScriptRemoveComments>
+    <TypeScriptOutFile />
+    <TypeScriptModuleResolution>node</TypeScriptModuleResolution>
+    <TypeScriptOutDir />
+    <TypeScriptGeneratesDeclarations>True</TypeScriptGeneratesDeclarations>
+    <TypeScriptNoEmitOnError>False</TypeScriptNoEmitOnError>
+    <TypeScriptSourceMap>True</TypeScriptSourceMap>
+    <TypeScriptMapRoot />
+    <TypeScriptSourceRoot>
+    </TypeScriptSourceRoot>
+    <TypeScriptEmitDecoratorMetadata>True</TypeScriptEmitDecoratorMetadata>
+    <TypeScriptExperimentalDecorators>True</TypeScriptExperimentalDecorators>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptJSXEmit>None</TypeScriptJSXEmit>
+    <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+    <TypeScriptModuleKind>System</TypeScriptModuleKind>
+    <TypeScriptRemoveComments>False</TypeScriptRemoveComments>
+    <TypeScriptOutFile />
+    <TypeScriptModuleResolution>node</TypeScriptModuleResolution>
+    <TypeScriptOutDir />
+    <TypeScriptGeneratesDeclarations>True</TypeScriptGeneratesDeclarations>
+    <TypeScriptNoEmitOnError>False</TypeScriptNoEmitOnError>
+    <TypeScriptSourceMap>True</TypeScriptSourceMap>
+    <TypeScriptMapRoot />
+    <TypeScriptSourceRoot>
+    </TypeScriptSourceRoot>
+    <TypeScriptEmitDecoratorMetadata>True</TypeScriptEmitDecoratorMetadata>
+    <TypeScriptExperimentalDecorators>True</TypeScriptExperimentalDecorators>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>npm run tsc</PreBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,3 @@
+C:\Manish\PrimeNGSample2\PrimeNGSample2\bin\Debug\PrimeNGSample2.pdb
+C:\Manish\PrimeNGSample2\PrimeNGSample2\obj\Debug\PrimeNGSample2.dll
+C:\Manish\PrimeNGSample2\PrimeNGSample2\obj\Debug\PrimeNGSample2.pdb

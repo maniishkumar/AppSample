@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="RootModule">
+    <File Path="package.json" Url="package.json" ReplaceContent="TRUE" />
+    <File Path="typings.json" Url="typings.json" ReplaceContent="TRUE" />
+    <File Path="typings\browser\ambient\es6-shim\index.d.ts" Url="typings/browser/ambient/es6-shim/index.d.ts" ReplaceContent="TRUE" />
+    <File Path="typings\browser\ambient\jasmine\index.d.ts" Url="typings/browser/ambient/jasmine/index.d.ts" ReplaceContent="TRUE" />
+    <File Path="typings\main\ambient\es6-shim\index.d.ts" Url="typings/main/ambient/es6-shim/index.d.ts" ReplaceContent="TRUE" />
+    <File Path="typings\main\ambient\jasmine\index.d.ts" Url="typings/main/ambient/jasmine/index.d.ts" ReplaceContent="TRUE" />
+    <File Path="typings\browser.d.ts" Url="typings/browser.d.ts" ReplaceContent="TRUE" />
+    <File Path="typings\main.d.ts" Url="typings/main.d.ts" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

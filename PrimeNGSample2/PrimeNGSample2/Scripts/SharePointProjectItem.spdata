@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="Scripts\" Type="ElementManifest" />
+    <ProjectItemFile Source="App.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="jquery-1.9.1.min.map" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="jquery-1.9.1.min.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="jquery-1.9.1.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="jquery-1.9.1.intellisense.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="app\resources\icons\css\font-awesome.min.css" Target="Scripts\app\resources\icons\css\" Type="ElementFile" />
+    <ProjectItemFile Source="app\resources\icons\fonts\fontawesome-webfont.eot" Target="Scripts\app\resources\icons\fonts\" Type="ElementFile" />
+    <ProjectItemFile Source="app\resources\icons\fonts\fontawesome-webfont.svg" Target="Scripts\app\resources\icons\fonts\" Type="ElementFile" />
+    <ProjectItemFile Source="app\resources\icons\fonts\fontawesome-webfont.ttf" Target="Scripts\app\resources\icons\fonts\" Type="ElementFile" />
+    <ProjectItemFile Source="app\resources\icons\fonts\fontawesome-webfont.woff" Target="Scripts\app\resources\icons\fonts\" Type="ElementFile" />
+    <ProjectItemFile Source="app\resources\icons\fonts\fontawesome-webfont.woff2" Target="Scripts\app\resources\icons\fonts\" Type="ElementFile" />
+    <ProjectItemFile Source="app\resources\icons\fonts\FontAwesome.otf" Target="Scripts\app\resources\icons\fonts\" Type="ElementFile" />
+    <ProjectItemFile Source="app\appComponent.js.map" Target="Scripts\app\" Type="ElementFile" />
+    <ProjectItemFile Source="app\appComponent.ts" Target="Scripts\app\" Type="ElementFile" />
+    <ProjectItemFile Source="app\boot.js.map" Target="Scripts\app\" Type="ElementFile" />
+    <ProjectItemFile Source="app\boot.ts" Target="Scripts\app\" Type="ElementFile" />
+    <ProjectItemFile Source="tsconfig.json" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="app\appComponent.js" Target="Scripts\app\" Type="ElementFile" />
+    <ProjectItemFile Source="app\boot.js" Target="Scripts\app\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

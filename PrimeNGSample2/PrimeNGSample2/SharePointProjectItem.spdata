@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Type="ElementManifest" />
+    <ProjectItemFile Source="package.json" Type="ElementFile" />
+    <ProjectItemFile Source="typings.json" Type="ElementFile" />
+    <ProjectItemFile Source="typings\browser\ambient\es6-shim\index.d.ts" Target="typings\browser\ambient\es6-shim\" Type="ElementFile" />
+    <ProjectItemFile Source="typings\browser\ambient\jasmine\index.d.ts" Target="typings\browser\ambient\jasmine\" Type="ElementFile" />
+    <ProjectItemFile Source="typings\main\ambient\es6-shim\index.d.ts" Target="typings\main\ambient\es6-shim\" Type="ElementFile" />
+    <ProjectItemFile Source="typings\main\ambient\jasmine\index.d.ts" Target="typings\main\ambient\jasmine\" Type="ElementFile" />
+    <ProjectItemFile Source="typings\browser.d.ts" Target="typings\" Type="ElementFile" />
+    <ProjectItemFile Source="typings\main.d.ts" Target="typings\" Type="ElementFile" />
+  </Files>
+</ProjectItem>
