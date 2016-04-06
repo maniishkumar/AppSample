@@ -30,7 +30,7 @@
         System.config({
             defaultJSExtensions: true,
             packages: {
-                app: { "defaultExtension": 'js' }
+                '../Scripts/app': { "defaultExtension": 'js' }
             },
             map: {
                 'angular2': '../node_modules/angular2',
